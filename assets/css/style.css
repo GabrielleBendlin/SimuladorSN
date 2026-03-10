@@ -1,0 +1,92 @@
+/* ESTILO GERAL */
+
+:root{
+--color-box: #FFFFFF;
+--color-darkBlue: #002077;
+--color-lightBlue: #2c5ee9; 
+--color-title: #001D6F;
+--color-font: #111111;
+--color-font2: #242424;
+--color-border: #c7c7c7;
+}
+
+/* RESET E FONTES PADRÃO*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* LAYOUT PRINCIPAL */
+
+body{
+    background: linear-gradient(135deg, var(--color-lightBlue), var(--color-darkBlue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.title{
+    color: var(--color-darkBlue);
+    font-size: 20px;
+}
+
+.container{
+    width: 100%;  
+    padding: 30px 40px;
+    max-width: 600px;
+    background-color: var(--color-box);
+    color: var(--color-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 30px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+/* FOMULÁRIOS / INPUTS */
+
+.inputForm, .inputResult {
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    background-color: var(--color-box);
+    padding: 5px;
+    margin-top: 20px;
+} 
+
+.resultado{
+    margin-top: 30px;
+}
+
+.resultado h3{
+    color: var(--color-font2)
+}
+
+/* BOTÕES */
+
+.btnCalcular{
+    background-color: var(--color-box);
+    color: var(--color-darkBlue);
+    border: 1px solid var(--color-darkBlue);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 40px;
+}
+
+.btnCalcular:hover{
+    background-color: var(--color-darkBlue);
+    color: var(--color-box);
+}
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Simulador Simples Nacional</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h2>Simulador Simples Nacional</h2>
+      </div>
+      <form action="" class="formulario">
+        <h3>Preencha os campos abaixo:</h3>
+        <div>
+          <label>Anexo:</label>
+          <select name="Anexo" id="tipoAnexo" required="required" class="inputForm">
+            <option value="Anexo I">Anexo I</option>
+            <option value="Anexo II">Anexo II</option>
+            <option value="Anexo III">Anexo III</option>
+            <option value="Anexo IV">Anexo IV</option>
+            <option value="Anexo V">Anexo V</option>
+          </select>
+        </div>
+        <div>
+          <label>Faturamento dos últimos 12 meses:</label>
+          <input class="inputForm" type="text" value="" id="RBT12"/>
+        </div>
+        <div>
+          <label>Faturamento do último mês:</label>
+          <input class="inputForm" type="text" value="" id="faturamentoMes"/>
+        </div>
+        <input type="button" class="btnCalcular" value="Calcular" onclick="calcularSN()">
+        <div class="resultado">
+          <h3>Resultado:</h3>
+          <label>Alíquota Nominal:</label>
+          <input class="inputResult" type="text" id="aliquotaNominal" readonly> <br />
+          <label>Alíquota Efetiva:</label>
+          <input class="inputResult" type="text" id="aliquotaEfetiva" readonly> <br />
+          <label>Valor DAS:</label>
+          <input class="inputResult" type="text" id="valorDAS" readonly>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="assets/js/index.js"></script>
+</html>
